@@ -1,0 +1,100 @@
+/* CSS for the sidebar */
+
+#sideBar {
+    width: 250px;
+    background-color: white;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 10px;
+    border-right: 1px solid #cccccc;
+    overflow-y: auto;
+    z-index: 1;
+    transition: width 0.5s;
+}
+
+/* Style for the sidebar links */
+#sideBar ul {
+    list-style-type: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.SideBarOptions {
+    width: 100%;
+    transition: background-color 0.3s;
+    position: flex;
+    box-sizing: border-box;
+    border: 5px solid transparent;
+    border-radius: 7px;
+    display: flex; /* Use flex to align symbol and option horizontally */
+    align-items: center; /* Vertically center the content */
+}
+
+#sideBar ul li .symbol {
+    width: 20px;
+    font-size: 18px;
+    text-align: center;
+    
+}
+
+#sideBar ul li a {
+    color: #232b2b;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    
+}
+
+/* Change the link color and background on hover */
+.SideBarOptions:hover {
+    background-color: #cccccc;
+    padding-right: 5px;
+}
+
+#SideBarLogo {
+    font-style: italic;
+    font-size: 36px;
+}
+
+.logo {
+    margin-bottom: 20px;
+}
+
+
+/* Add these styles to your existing CSS */
+
+.searchTable {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background-color: white;
+    overflow: hidden;
+    transition: width 0.8s, z-index 0s ease 3s, border-right 0s;
+    display: flex;
+    align-items: center;
+    margin-left: 43px;
+    border-radius: 15px;
+    z-index: 0;
+    display: flex;
+    flex-direction: column; /* Stack header and searchbar vertically */
+
+}
+
+
+.searchTable .header {
+    position: absolute;
+    padding: 10px; /* Add some padding for spacing */
+}
+
+.searchTable .searchbar {
+    text-align: center;
+}
+
+.searchTable .searchbar input {
+    width: 100%;
+}
+
+
