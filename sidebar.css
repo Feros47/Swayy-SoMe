@@ -56,6 +56,7 @@
 #SideBarLogo {
     font-style: italic;
     font-size: 36px;
+    width: 100%;
 }
 
 .logo {
@@ -68,6 +69,7 @@
 .searchTable {
     position: fixed;
     top: 0;
+    left: 0;
     height: 100%;
     width: 0;
     background-color: white;
@@ -83,18 +85,58 @@
 
 }
 
+.searchTable .searchArea {
+    margin-top: 50px;
+}
 
 .searchTable .header {
     position: absolute;
-    padding: 10px; /* Add some padding for spacing */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.searchTable .header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #232b2b;
+    margin-left: 15px;
 }
 
 .searchTable .searchbar {
     text-align: center;
+    padding: 10px 10px;
+    margin-top: 50px;
 }
 
 .searchTable .searchbar input {
     width: 100%;
+    padding: 10px;
+    border: 2px solid #cccccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    background-color: #cccccc;
 }
 
+.searchTable .searchbar a {
+    display: block;
+    margin-top: 10px;
+}
 
+.searchTable .searchbar img {
+    width: 40px;
+    height: 40px;
+    box-sizing: content-box;
+    border-left: 2px solid #cccccc;
+}
+
+.searchTable .searchbar .removeSearch {
+    position: relative;
+    top: -51px;
+    left: 112px;
+}
+
+.searchTable .searchbar img:hover {
+    transition: background-color 0.2s;
+    background-color: #cccccc;
+}

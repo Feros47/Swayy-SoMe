@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
         searchTable.style.width = "300px"; // Adjust the width as needed
         searchTable.style.borderRight = "1px solid #cccccc"
         sideBar.style.width = "50px";
-        searchTable.style.zIndex = "1"
+        searchTable.style.zIndex = "1";
         document.addEventListener("click", closeSearchTableOnClickOutside);
     }
 
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function closeSearchTable() {
         searchTable.style.width = "0";
         sideBar.style.width = "250px";
-        searchTable.style.zIndex = "-1"
+        searchTable.style.zIndex = "-1";
         document.removeEventListener("click", closeSearchTableOnClickOutside);
     }
 
