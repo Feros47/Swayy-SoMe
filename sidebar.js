@@ -1,12 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
     const searchOption = document.getElementById("searchOption");
     const searchTable = document.querySelector(".searchTable");
-    const sideBar = document.getElementById("sideBar")
+    const sideBar = document.getElementById("sideBar");
+
 
     // Function to open the searchTable
     function openSearchTable() {
         searchTable.style.width = "300px"; // Adjust the width as needed
-        searchTable.style.borderRight = "1px solid #cccccc"
+        searchTable.style.borderRight = "1px solid #cccccc";
         sideBar.style.width = "50px";
         searchTable.style.zIndex = "1";
         document.addEventListener("click", closeSearchTableOnClickOutside);

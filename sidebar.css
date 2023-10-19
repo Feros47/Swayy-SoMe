@@ -53,16 +53,12 @@
     padding-right: 5px;
 }
 
-#SideBarLogo {
+#SideBarTextLogo {
     font-style: italic;
     font-size: 36px;
-    width: 100%;
+    position: relative;
+    left: -15px;
 }
-
-.logo {
-    margin-bottom: 20px;
-}
-
 
 /* Add these styles to your existing CSS */
 

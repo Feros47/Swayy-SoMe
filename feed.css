@@ -1,0 +1,68 @@
+/* Feed Styles */
+.feed-container {
+    display: flex;
+    min-height: 100vh; /* Ensure the container covers the full viewport height */
+    margin-left: 260px;
+    z-index: -2;
+    justify-content: center; /* Center horizontally */
+}
+
+.feed {
+    margin: 20px;
+    max-width: 515px;
+    min-width: 400px;
+    padding: 10px;
+    box-sizing: content-box;
+    border-radius: 10px;
+    display: flex; /* Make it a flex container */
+    flex-direction: column; /* Stack feed items vertically */
+}
+
+.feed-item {
+    padding-bottom: 80px;
+    overflow: hidden;
+    box-sizing: border-box;
+    border-bottom: 1px solid #cccccc;
+    max-height: 800px;
+}
+
+.feed-item p {
+    font-weight: bold;
+}
+
+.feed-item img {
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.feed-item video {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.profileFeed {
+    width: 400px;
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+.profileName {
+    position: relative;
+    top: 25px;
+    left: 40px;
+    font-weight: bold;
+}
+
+.profileButton {
+    width: 32px;
+    height: 32px;
+}
+
+.profileButton img {
+    border-radius: 50%;
+    object-fit: cover;
+}

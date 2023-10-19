@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Swayy | NM</title>
     <link rel="stylesheet" href="sidebar.css">
+    <link rel="stylesheet" href="feed.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div id="sideBar">
         <ul>
-            <li id="SideBarLogo" class="logo"><a href="#">Swayy</a></li>
+            <li id="SideBarTextLogo" class="logo"><a href="#">Swayy</a></li>
             <li class="SideBarOptions"><i class="fas fa-home symbol"></i><a href="#">Home</a></li>
             <li id="searchOption" class="SideBarOptions"><i class="fas fa-search symbol"></i><a href="#">Search</a></li>
             <li class="SideBarOptions"><i class="fas fa-globe symbol"></i><a href="#">Discover</a></li>
@@ -32,13 +33,37 @@
                         <img src="https://static.thenounproject.com/png/130268-200.png" alt="Button"/>
                     </a>
                 </div>
-
-            </div>
             </div>
         </div>
     </div>
 
+    <!-- Feed Section -->
+    <div class="feed-container">
+        <div class="feed">
+            <!-- Test Image-->
+            <div class="feed-item">
+                <div class="profileFeed">
+                    <div class="profileName">
+                        Profile Name
+                    </div>
+                    <div class="profileButton">
+                        <a href="profile.html"><img src="https://wallpapers.com/images/hd/cool-profile-picture-87h46gcobjl5e4xu.jpg"></a>
+                    </div>
+                </div>
+                <img src="https://staticg.sportskeeda.com/editor/2022/10/1ee6d-16658333013660-1920.jpg" alt="User X's photo">
+            </div>
+            <!-- Test Video-->
+            <div class="feed-item">
+                <p>Userprofile goes here</p>
+                <video controls>
+                    <source src="https://youtu.be/cmFUnETleLU" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
 
+    <script src="infinite-scroll.js"></script>
     <script src="sidebar.js"></script>
 </body>
 </html>
