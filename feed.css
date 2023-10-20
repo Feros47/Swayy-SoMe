@@ -19,7 +19,7 @@
 }
 
 .feed-item {
-    padding-bottom: 80px;
+    padding-bottom: 150px;
     overflow: hidden;
     box-sizing: border-box;
     border-bottom: 1px solid #cccccc;
@@ -66,3 +66,112 @@
     border-radius: 50%;
     object-fit: cover;
 }
+
+/* Post Acknoweldgement css */
+
+.postAck {
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    line-height: 30px; /* Set the line-height for vertical alignment */
+    color: #555;   /* Color for the unliked state */
+}
+
+.postAckIcons {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 40px;
+}
+
+.postLike {
+    width:30px;
+    height:36px;
+    cursor: pointer;
+}
+
+/* Styles for the heart icon */
+.heartIcon {
+    padding-left: 2px;
+    margin-top: 5px;
+    width: 12px;
+    overflow: visible;
+    position: relative;
+    top: -2px;
+}
+
+.heartPath {
+    fill: white; /* Default fill color */
+    stroke: black; /* Default stroke color */
+    stroke-width: 4; /* Default stroke thickness */
+}
+
+.heartPath:hover{
+    stroke: #65676b; /* Default stroke color */
+    transition: 0.3s;
+}
+
+/* Styles for the liked state */
+.postLike.liked .heartPath {
+    fill: #FA383E; /* Fill color when liked */
+    stroke: #FA383E;
+    transition: 0.2s;
+}
+
+
+
+/* Styles for the comment icon */
+
+.postComment {
+    width: 35px;
+    height:36px;
+    cursor: pointer;
+    border: 1px solid#555;
+}
+
+.commentIcon {
+    margin-top: 5px;
+    width: 24px;
+    overflow: visible;
+    left: 5px;
+    position: relative;
+}
+
+.commentPath {
+    fill: white; /* Default fill color */
+    stroke: black; /* Default stroke color */
+    stroke-width: 2; /* Default stroke thickness */
+}
+
+
+.postComment :hover {
+    stroke: #65676b; /* Default stroke color */
+    transition: 0.3s;
+}
+
+.postShare {
+    width: 35px;
+    height:36px;
+    cursor: pointer;
+}
+
+.shareIcon {
+    margin-top: 5px;
+    fill: none; /* Fill color */
+    stroke: black; /* Stroke color */
+    stroke-linejoin: round; /* Line join style */
+    stroke-width: 2; /* Stroke width */
+    height: 24px;
+    width: 24px;
+    left: 5px;
+    top: 1px;
+    position: relative;
+}
+
+.shareIcon:hover {
+    stroke: #65676b; /* Default stroke color */
+    transition: 0.3s;
+}
+
+
