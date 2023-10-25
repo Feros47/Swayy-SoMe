@@ -89,6 +89,8 @@
     width:30px;
     height:36px;
     cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* Styles for the heart icon */
@@ -98,7 +100,6 @@
     width: 12px;
     overflow: visible;
     position: relative;
-    top: -2px;
 }
 
 .heartPath {
@@ -107,9 +108,9 @@
     stroke-width: 4; /* Default stroke thickness */
 }
 
-.heartPath:hover{
+.postLike:hover .heartPath{
     stroke: #65676b; /* Default stroke color */
-    transition: 0.3s;
+    transition: 0.2s ease-in-out;
 }
 
 /* Styles for the liked state */
@@ -124,17 +125,17 @@
 /* Styles for the comment icon */
 
 .postComment {
-    width: 35px;
+    width: 30px;
     height:36px;
     cursor: pointer;
-    border: 1px solid#555;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .commentIcon {
     margin-top: 5px;
     width: 24px;
     overflow: visible;
-    left: 5px;
     position: relative;
 }
 
@@ -145,15 +146,17 @@
 }
 
 
-.postComment :hover {
+.postComment:hover .commentPath{
     stroke: #65676b; /* Default stroke color */
-    transition: 0.3s;
+    transition: 0.2s ease;
 }
 
 .postShare {
-    width: 35px;
+    width: 30px;
     height:36px;
     cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 .shareIcon {
@@ -162,16 +165,14 @@
     stroke: black; /* Stroke color */
     stroke-linejoin: round; /* Line join style */
     stroke-width: 2; /* Stroke width */
-    height: 24px;
+    height: 28px;
     width: 24px;
-    left: 5px;
-    top: 1px;
     position: relative;
 }
 
-.shareIcon:hover {
+.postShare:hover .shareIcon{
     stroke: #65676b; /* Default stroke color */
-    transition: 0.3s;
+    transition: 0.2s ease;
 }
 
 
